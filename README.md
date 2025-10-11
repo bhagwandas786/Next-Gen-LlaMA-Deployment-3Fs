@@ -20,7 +20,7 @@ This deployment is designed for speed, privacy, and simplicity. 💻✨
 
 🧠 Optimized Model — Uses Llama-3.2-3B Q4_K_M quantized model for fast inference.
 
-**🏗️ Architecture Overview**
+🏗️ **Architecture Overview**
 
  <img width="1396" height="443" alt="image" src="https://github.com/user-attachments/assets/ade1f2a3-eaf8-48c4-bd3e-de7dd7387656" />
 
@@ -65,26 +65,26 @@ docker-compose up -d --build
 ```bash
 
 ## Web UI: 
-http://localhost:8080
+http://158.101.98.132:9090/
 
 ## Health Check: 
-curl http://localhost:8080/health
+curl http://158.101.98.132:9090/health
 
 ## CLI Chat: 
 docker exec -it llama-cli /app/llama-cli -m /models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -i
 
 ## Tokenize Endpoint 
-curl -X POST http://localhost:8080/tokenize -H "Content-Type: application/json" -d '{"content": "LETTERS/WORDS"}'
+curl -X POST http://158.101.98.132:9090/tokenize -H "Content-Type: application/json" -d '{"content": "LETTERS/WORDS"}'
 
 ## # Server Info API
-curl http://localhost:8080/v1/models
+curl http://158.101.98.132:9090/v1/models
 
 ```
 
 **6. API Requests**
 ```bash
 
-curl -X POST http://localhost:8080/completion \
+curl -X POST http://158.101.98.132:9090/completion \
   -H "Content-Type: application/json" \
   -d '{
     "prompt": "PROMPT",
@@ -98,7 +98,7 @@ curl -X POST http://localhost:8080/completion \
   # Interactive session
 docker exec -it llama-cli /app/llama-cli -m /models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -i
 
-# Single question
+ # Single question
 docker exec llama-cli /app/llama-cli -m /models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -p "What is AI?"
  
   ```
@@ -139,7 +139,7 @@ You can easily switch between different .gguf models without rebuilding anything
   Type: Instruction-tuned AI model
   Quantization: Q4_K_M (optimized for performance)*
 
-  Ready to start? Run docker-compose up -d and open http://localhost:8080 🚀
+  Ready to start? Run docker-compose up -d and open http://158.101.98.132:9090/ 🚀
 
 
 
