@@ -78,12 +78,11 @@ curl http://158.101.98.132:9090/v1/models
 **6. API Requests**
 ```bash
 
-curl -X POST http://158.101.98.132:9090/completion \
+curl -s -X POST http://158.101.98.132:9090/completion \
   -H "Content-Type: application/json" \
-  -d '{
-    "prompt": "PROMPT",
-    "max_tokens": 20
-  }'
+  -d '{"prompt": "What is DevOps", "max_tokens": 50}' \
+| grep -oP '"content":"\K[^"]+'
+
   
   ```
   **7. Command Line**
