@@ -1,0 +1,35 @@
+# Exclude Git-related and config files
+.git
+.gitignore
+llama.cpp/.git
+llama.cpp/.github
+
+# Python cache and bytecode
+*.pyc
+__pycache__
+
+# Build directories and temporary outputs
+llama.cpp/build
+llama.cpp/.devops/tests
+tmp/
+temp/
+
+# Node dependencies (if any)
+node_modules
+
+# Log files and markdown docs (not needed inside image)
+*.log
+*.md
+
+# Large model files or cached data folders
+models/
+llama.cpp/models/
+
+# Temporary editor files
+*.swp
+.DS_Store
+
+# Any other temp or data folders you don't want in the image
+cache/
+dist/
+

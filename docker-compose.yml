@@ -1,0 +1,21 @@
+services:
+  llama-server:
+    build:
+      context: .
+      target: server
+    image: llama-cpp-server
+    container_name: llama-server
+    volumes:
+      - ./models:/models
+    ports:
+      - "8080:8080"
+    environment:
+      - LLAMA_ARG_MODEL=/models/Llama-3.2-3B-Instruct-Q4_K_M.gguf
+  llama-cli:
+    build:
+      context: .
+      target: light
+    image: llama-cpp-cli
+    container_name: llama-cli
+    volumes:
+      - ./models:/models
