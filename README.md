@@ -6,13 +6,19 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 
 # **✨ Key Features**
 
-🌐 Web Interface — Beautiful, responsive chat UI for easy interaction.
+*🌐 Web Interface — Beautiful, responsive chat UI for easy interaction.
+
 🔌 REST API — Developer-ready endpoints for integrations.
+
 💻 Command Line Access — Lightweight terminal-based chat interface.
+
 🔒 100% Private — Runs entirely on your machine or VM (no data leaves your system).
+
 💸 Completely Free — No external API or token costs.
+
 📶 Offline Mode — Works without internet once set up.
-🧠 Optimized Model — Uses Llama-3.2-3B Q4_K_M quantized model for fast inference.
+
+🧠 Optimized Model — Uses Llama-3.2-3B Q4_K_M quantized model for fast inference.*
 
 # 🏗️ **Architecture Overview**
 
