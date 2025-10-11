@@ -4,6 +4,7 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 
 *This deployment is designed for speed, privacy, and simplicity. 💻✨*
 
+
 # **✨ Key Features**
 
 🌐 Web Interface — Beautiful, responsive chat UI for easy interaction.
@@ -19,6 +20,7 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 📶 Offline Mode — Works without internet once set up.
 
 🧠 Optimized Model — Uses Llama-3.2-3B Q4_K_M quantized model for fast inference.
+
 
 # 🏗️ **Architecture Overview**
 
