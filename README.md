@@ -4,7 +4,7 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 
 *This deployment is designed for speed, privacy, and simplicity. 💻✨*
 
-**✨ Key Features**
+# **✨ Key Features**
 
 🌐 Web Interface — Beautiful, responsive chat UI for easy interaction.
 🔌 REST API — Developer-ready endpoints for integrations.
@@ -14,7 +14,7 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 📶 Offline Mode — Works without internet once set up.
 🧠 Optimized Model — Uses Llama-3.2-3B Q4_K_M quantized model for fast inference.
 
-🏗️ **Architecture Overview**
+# 🏗️ **Architecture Overview**
 
  <img width="1396" height="443" alt="image" src="https://github.com/user-attachments/assets/ade1f2a3-eaf8-48c4-bd3e-de7dd7387656" />
 
@@ -22,7 +22,7 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 llama-cli → Terminal interface for prompt/response
 /models → Local folder with downloaded model file*
 
-**QUICK START**
+# **QUICK START**
 
 ### 1. Create Project
 ```bash
@@ -117,12 +117,10 @@ docker system prune -a
 docker-compose up --build
 
   ```
-🔄** Model Switching Feature**
+# 🔄** Model Switching Feature**
 
 You can easily switch between different .gguf models without rebuilding anything.
-
 🧠 Add new model — Place your .gguf file inside the models folder.
-
 📝 Update path — In docker-compose.yml, set:
   
   **Tested Model Info**
@@ -131,6 +129,8 @@ You can easily switch between different .gguf models without rebuilding anything
   Size: ~2GB
   Type: Instruction-tuned AI model
   Quantization: Q4_K_M (optimized for performance)*
+
+# 🌐**Live Endpoints for LlaMA**  
 
   **🖥️Live Chat with LlaMA (UI) :** http://158.101.98.132:9090/ 🚀
   
