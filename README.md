@@ -22,23 +22,7 @@ This deployment is designed for speed, privacy, and simplicity. 💻✨
 
 **🏗️ Architecture Overview**
 
- ┌─────────────────────────┐
- │   User / Developer      │
- └────────────┬────────────┘
-              │
-      Web Browser / API / CLI
-              │
- ┌────────────▼────────────┐
- │  LLaMA Server (Docker)  │  <-- Runs the model + API
- └────────────┬────────────┘
-              │
- ┌────────────▼────────────┐
- │  LLaMA CLI Container    │  <-- Terminal interface
- └────────────┬────────────┘
-              │
- ┌────────────▼────────────┐
- │        Model Store      │  <-- Local .gguf model files
- └─────────────────────────┘
+ <img width="1396" height="443" alt="image" src="https://github.com/user-attachments/assets/ade1f2a3-eaf8-48c4-bd3e-de7dd7387656" />
 
 *llama-server → Handles Web UI and REST API
 llama-cli → Terminal interface for prompt/response
