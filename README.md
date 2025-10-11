@@ -1,42 +1,85 @@
-**Next-Gen LLaMA 3 Containerized Deployment for CLI, Web UI and REST API**
+**🚀 Next-Gen LLaMA 3 — Containerized AI Deployment (CLI | Web UI | REST API) 🚀**
 
-A complete Docker setup to run Llama-3.2-3B AI model locally with Web UI, API, and CLI.
+A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with an elegant Web UI, developer-friendly REST API, and interactive Command Line Interface — all in one place.
 
-## ✨ Features
-- 🌐 **Web Interface** - Beautiful chat UI
-- 🔌 **REST API** - For developers  
-- 💻 **Command Line** - Terminal access
-- 🔒 **100% Private** - Runs on your machine
-- 💸 **Completely Free** - No API costs
-- 🌐 **Offline Mode** - Runs locally without internet capability 
+This deployment is designed for speed, privacy, and simplicity. 💻✨
+
+**✨ Key Features**
+
+🌐 Web Interface — Beautiful, responsive chat UI for easy interaction.
+
+🔌 REST API — Developer-ready endpoints for integrations.
+
+💻 Command Line Access — Lightweight terminal-based chat interface.
+
+🔒 100% Private — Runs entirely on your machine or VM (no data leaves your system).
+
+💸 Completely Free — No external API or token costs.
+
+📶 Offline Mode — Works without internet once set up.
+
+🧠 Optimized Model — Uses Llama-3.2-3B Q4_K_M quantized model for fast inference.
+
+**🏗️ Architecture Overview**
+
+ ┌─────────────────────────┐
+ │   User / Developer      │
+ └────────────┬────────────┘
+              │
+      Web Browser / API / CLI
+              │
+ ┌────────────▼────────────┐
+ │  LLaMA Server (Docker)  │  <-- Runs the model + API
+ └────────────┬────────────┘
+              │
+ ┌────────────▼────────────┐
+ │  LLaMA CLI Container    │  <-- Terminal interface
+ └────────────┬────────────┘
+              │
+ ┌────────────▼────────────┐
+ │        Model Store      │  <-- Local .gguf model files
+ └─────────────────────────┘
+
+*llama-server → Handles Web UI and REST API
+llama-cli → Terminal interface for prompt/response
+/models → Local folder with downloaded model file*
 
 **QUICK START**
 
 ### 1. Create Project
 ```bash
+
 mkdir llama-docker
 cd llama-docker
 mkdir models
+
 ```
 
 **2. Download Model**
 ```bash
+
 cd models
 wget https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf
 cd ..
+
 ```
 
 **3. Clone llama.cpp**
 ```bash
+
 git clone https://github.com/ggerganov/llama.cpp.git
+
 ```
 **4. Start Services**
 ```bash
+
 docker-compose up -d --build
+
 ```
 
 **5. Access all 3 Interfaces**
 ```bash
+
 ## Web UI: 
 http://localhost:8080
 
@@ -51,28 +94,34 @@ curl -X POST http://localhost:8080/tokenize -H "Content-Type: application/json" 
 
 ## # Server Info API
 curl http://localhost:8080/v1/models
+
 ```
 
 **6. API Requests**
 ```bash
+
 curl -X POST http://localhost:8080/completion \
   -H "Content-Type: application/json" \
   -d '{
     "prompt": "PROMPT",
     "max_tokens": 20
   }'
+  
   ```
   **7. Command Line**
   ```bash
+  
   # Interactive session
 docker exec -it llama-cli /app/llama-cli -m /models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -i
 
 # Single question
 docker exec llama-cli /app/llama-cli -m /models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -p "What is AI?"
+ 
   ```
 
   **8. Management**
    ```bash
+   
 ## Check Status
 docker-compose ps 
 docker-compose logs llama-server
@@ -89,8 +138,16 @@ docker-compose restart
 docker-compose down
 docker system prune -a
 docker-compose up --build
-  ```
 
+  ```
+🔄** Model Switching Feature**
+
+You can easily switch between different .gguf models without rebuilding anything.
+
+🧠 Add new model — Place your .gguf file inside the models folder.
+
+📝 Update path — In docker-compose.yml, set:
+  
   **Tested Model Info**
   
   *Name: Llama-3.2-3B-Instruct-Q4_K_M.gguf
