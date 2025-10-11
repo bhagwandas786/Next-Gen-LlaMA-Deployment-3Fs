@@ -139,7 +139,11 @@ You can easily switch between different .gguf models without rebuilding anything
   Type: Instruction-tuned AI model
   Quantization: Q4_K_M (optimized for performance)*
 
-  Ready to start? Run docker-compose up -d and open http://158.101.98.132:9090/ 🚀
+  **🖥️Live Chat with LlaMA (UI) :** http://158.101.98.132:9090/ 🚀
+  **🩺 Web UI Health Status:** http://158.101.98.132:9090/health
+  **🧠 Server Info API:** http://158.101.98.132:9090/v1/models
+  **📥 Model Link:** https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf
+  
 
 
 
