@@ -126,7 +126,7 @@ docker system prune -a
 docker-compose up --build
 
   ```
-# 🔄** Model Switching Feature**
+# **🔄 Model Switching Feature**
 
 You can easily switch between different .gguf models without rebuilding anything.
 🧠 Add new model — Place your .gguf file inside the models folder.
@@ -139,7 +139,7 @@ You can easily switch between different .gguf models without rebuilding anything
   Type: Instruction-tuned AI model
   Quantization: Q4_K_M (optimized for performance)*
 
-# 🌐**Live Endpoints for LlaMA**  
+# **🌐Live Endpoints for LlaMA**  
 
   **🖥️Live Chat with LlaMA (UI) :** http://158.101.98.132:9090/ 🚀
   
