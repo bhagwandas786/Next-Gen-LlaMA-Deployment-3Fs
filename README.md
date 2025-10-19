@@ -166,10 +166,10 @@ You can easily switch between different .gguf models without rebuilding anything
 
 **🧩 What Can the Model Do?**
 
-- Answer Questions: Respond intelligently to user prompts.
-- Generate Text: Write articles, summaries, or creative text.
-- Converse Naturally: Maintain contextual, coherent conversations.
-- Translate Languages: Perform basic translation tasks between major languages.
+- *Answer Questions:* Respond intelligently to user prompts.
+- *Generate Text:* Write articles, summaries, or creative text.
+- *Converse Naturally:* Maintain contextual, coherent conversations.
+- *Translate Languages:* Perform basic translation tasks between major languages.
 
 # **🌐Live Endpoints for LlaMA**  
 
