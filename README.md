@@ -25,11 +25,31 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 
 # 🏗️ **Architecture Overview**
 
+ *My architecture is based on the Transformer model, which is the foundation of modern NLP systems such as GPT and LLaMA.*
+
  <img width="1396" height="443" alt="image" src="https://github.com/user-attachments/assets/ade1f2a3-eaf8-48c4-bd3e-de7dd7387656" />
+
+**Key Components:**
+
+*Encoder* – Processes and extracts meaning from input text sequences.
+*Decoder* – Generates context-aware responses based on encoded information.
+*Self-Attention Mechanism* – Determines which words or tokens in a sentence are most relevant to each other.
+*Feed-Forward Layers* – Refine and transform representations between model layers.
+*Positional Encoding* – Helps the model understand word order in a sentence.
+*Multi-Head Attention* – Allows the model to capture multiple types of relationships simultaneously.
+*Layer Normalization & Dropout* – Improve generalization and prevent overfitting during training.
 
 *llama-server → Handles Web UI and REST API
 llama-cli → Terminal interface for prompt/response
 /models → Local folder with downloaded model file*
+
+# **📊 Core Hyperparameters**
+
+- Parameter	Description
+- Model Size	~300M parameters
+- Layer Depth	6–8 layers
+- Attention Heads	8 heads
+- Learning Rate	1e-4
 
 # **QUICK START**
 
@@ -126,11 +146,16 @@ docker system prune -a
 docker-compose up --build
 
   ```
+ # 🧠 **Model Overview**
+
+This deployment runs a LLaMA-based Large Language Model (LLM) designed to understand and generate natural language responses in real time. The model is powered by the llama.cpp backend, running inside a containerized environment for efficient and scalable inference.
+
 # **🔄 Model Switching Feature**
 
 You can easily switch between different .gguf models without rebuilding anything.
-🧠 Add new model — Place your .gguf file inside the models folder.
-📝 Update path — In docker-compose.yml, set:
+
+-  Add new model — Place your .gguf file inside the models folder.
+-  Update path — In docker-compose.yml, set:
   
   **Tested Model Info**
   
@@ -138,6 +163,13 @@ You can easily switch between different .gguf models without rebuilding anything
   Size: ~2GB
   Type: Instruction-tuned AI model
   Quantization: Q4_K_M (optimized for performance)*
+
+**🧩 What Can the Model Do?**
+
+- Answer Questions: Respond intelligently to user prompts.
+- Generate Text: Write articles, summaries, or creative text.
+- Converse Naturally: Maintain contextual, coherent conversations.
+- Translate Languages: Perform basic translation tasks between major languages.
 
 # **🌐Live Endpoints for LlaMA**  
 
@@ -150,9 +182,17 @@ You can easily switch between different .gguf models without rebuilding anything
   **📥 Model Overview:** https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct 🚀
    
   **📥 Model Downloading Link:** https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf 🚀
-  
+
+  # **Purpose of This Deployment**
+
+**This setup demonstrates:**
+
+- *Real-world LLaMA model serving using llama.cpp*
+- *Deployment through Docker Compose for reproducibility*
+- *API and CLI access for both interactive and programmatic usage*
 
 
+*This final project was collaboratively developed by Bhagwan Das Rathore and Wasiq Mahmood as part of their DevOps foundation course under the guidance of Muzamil Bilwani.*
 
 
 
