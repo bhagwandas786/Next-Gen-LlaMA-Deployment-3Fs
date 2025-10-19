@@ -173,8 +173,7 @@ You can easily switch between different .gguf models without rebuilding anything
 
 # **My LLaMA: Where AI Thinks Smart**
 
-<img width="1042" height="588" alt="image" src="https://github.com/user-attachments/assets/7bd59262-2635-4914-9356-7708ccd67339" />
-
+<img width="1151" height="534" alt="image" src="https://github.com/user-attachments/assets/f74b7a39-50e0-4536-93a8-9ae6c68fb050" />
 
 # **🌐Live Endpoints for LlaMA**  
 
