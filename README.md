@@ -171,7 +171,7 @@ You can easily switch between different .gguf models without rebuilding anything
 - *Converse Naturally:* Maintain contextual, coherent conversations.
 - *Translate Languages:* Perform basic translation tasks between major languages.
 
-#🦙**My LLaMA: Where AI Thinks Smart**  
+# 🦙**My LLaMA: Where AI Thinks Smart**  
 
 
 <img width="1151" height="534" alt="image" src="https://github.com/user-attachments/assets/f74b7a39-50e0-4536-93a8-9ae6c68fb050" />
