@@ -1,9 +1,9 @@
 # **🚀 Next-Gen LLaMA 3 Containerized AI Deployment (CLI | Web UI | REST API) 🚀**
 
 
-A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with an elegant Web UI, developer-friendly REST API, and interactive Command Line Interface — all in one place.
+* **A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with an elegant Web UI, developer-friendly REST API, and interactive Command Line Interface — all in one place.
 
-*This deployment is designed for speed, privacy, and simplicity. 💻✨*
+*This deployment is designed for speed, privacy, and simplicity. 💻✨* **
 
 
 # **✨ Key Features**
