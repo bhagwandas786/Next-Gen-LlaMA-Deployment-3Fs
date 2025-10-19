@@ -192,7 +192,7 @@ You can easily switch between different .gguf models without rebuilding anything
 - *API and CLI access for both interactive and programmatic usage*
 
 
-*This final project is collaboratively developed by Bhagwan Das Rathore and Wasiq Mahmood as part of their DevOps foundation course under the guidance of Muzamil Bilwani.*
+*This final project is collaboratively developed by Bhagwan Das Rathore and Wasiq Mahmood as part of DevOps foundation course under the guidance of Muzamil Bilwani.*
 
 
 
