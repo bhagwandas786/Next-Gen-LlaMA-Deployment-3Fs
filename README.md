@@ -159,10 +159,10 @@ You can easily switch between different .gguf models without rebuilding anything
   
   **Tested Model Info**
   
-  - *Name: Llama-3.2-3B-Instruct-Q4_K_M.gguf
+  - Name: Llama-3.2-3B-Instruct-Q4_K_M.gguf
   - Size: ~2GB
   - Type: Instruction-tuned AI model
-  - Quantization: Q4_K_M (optimized for performance)*
+  - Quantization: Q4_K_M (optimized for performance)
 
 **🧩 What Can the Model Do?**
 
