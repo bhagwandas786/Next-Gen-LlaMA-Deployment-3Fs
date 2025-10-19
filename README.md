@@ -31,8 +31,8 @@ A fully containerized setup to run LLaMA 3.2 (3B) locally or on a cloud VM with 
 
 **Key Components:**
 
-- *Encoder* – Processes and extracts meaning from input text sequences.
-- *Decoder* – Generates context-aware responses based on encoded information.
+*Encoder* – Processes and extracts meaning from input text sequences.
+- -*Decoder* – Generates context-aware responses based on encoded information.
 - *Self-Attention Mechanism* – Determines which words or tokens in a sentence are most relevant to each other.
 - *Feed-Forward Layers* – Refine and transform representations between model layers.
 - *Positional Encoding* – Helps the model understand word order in a sentence.
